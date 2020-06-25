@@ -2,7 +2,9 @@ package com.example.amst2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Calendar_view extends AppCompatActivity {
 
@@ -11,4 +13,8 @@ public class Calendar_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
     }
+
+
+
+
 }
