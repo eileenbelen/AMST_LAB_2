@@ -3,6 +3,7 @@ package com.example.amst2;
 import androidx.appcompat.app.AppCompatActivity;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.getbase.floatingactionbutton.FloatingActionButton;
+import android.content.Intent;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         calendario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                menu_flotante.collapse();
+                Intent intent = new Intent (view.getContext(), Calendar_view.class);
+                startActivityForResult(intent, 0);
             }
         });
 
@@ -32,4 +34,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
+
+
 }
