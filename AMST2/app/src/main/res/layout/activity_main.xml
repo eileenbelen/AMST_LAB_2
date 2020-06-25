@@ -29,9 +29,10 @@
             android:id="@+id/fab_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="showMap"
+            app:fab_icon="@android:drawable/ic_dialog_map"
             app:fab_size="normal"
-            app:fab_title="Maps"
-            app:fab_icon="@android:drawable/ic_dialog_map" />
+            app:fab_title="Maps" />
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
